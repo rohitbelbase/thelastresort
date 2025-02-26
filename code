@@ -1,1 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/LR6.ico">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="apple-touch-icon" href="/LR6_192.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>The Last Resort</title>
+
+    <script defer="defer" src="/static/js/main.627a7490.js"></script>
+    <link href="/static/css/main.6bec270c.css" rel="stylesheet">
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Sticky Navbar */
+        .NavBar1 {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .NavBar1 a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .NavBar1 a:hover {
+            color: #f39c12;
+            transform: scale(1.05);
+        }
+
+        /* Hamburger Menu Styles */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 11;
+        }
+
+        .hamburger-menu .bar {
+            width: 30px;
+            height: 4px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+
+        /* Slideshow Styles */
+        .slideshow {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slideshowSlider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex-shrink: 0;
+            width: 100%;
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        .NavBar1.dark-mode {
+            background-color: #333;
+        }
+
+        /* Mobile-Friendly Styling */
+        @media (max-width: 768px) {
+            .NavBar1 {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .NavBar1.active {
+                display: block;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+        }
+
+        /* Testimonial Styling */
+        .titleHeader2 h2 {
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="root">
+        <div class="App">
+
+            <!-- Hamburger Menu for Mobile -->
+            <div id="hamburger-menu" class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav class="sc-bgqQcB dqKYDp">
+                <div class="NavBar1">
+                    <a class="sc-gTRrQi hhxEtB active" href="/" aria-current="page">HOME</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/blog">NEWS</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/events">EVENTS</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/drinks">DRINKS</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/food">FOOD</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/socials">SOCIALS</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/draw">DRAW</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/disco">DISCO</a>
+                    <a class="sc-gTRrQi hhxEtB" href="/contact">CONTACT US</a>
+                </div>
+            </nav>
+
+            <!-- Slideshow Section -->
+            <section class="titleHeader">
+                <div class="slideshow">
+                    <div class="slideshowSlider">
+                        <div class="slide">
+                            <img src="/static/media/land_pic_1.6f1bc350ff3a7872900b.jpg" alt="Image 1" height="300px" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="/static/media/land_pic_2.75768487f6c7053b4083.jpg" alt="Image 2" height="300px" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="/static/media/land_pic_3.1540759fc8bdbd6179b7.jpg" alt="Image 3" height="300px" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="/static/media/land_pic_4.f124a1f8b04b03caa377.jpg" alt="Image 4" height="300px" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="/static/media/land_pic_5.f7fae63ae4a08c81fe22.jpg" alt="Image 5" height="300px" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="/static/media/land_pic_6.597e5f2e1e2f369fdb58.jpg" alt="Image 6" height="300px" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshowDots">
+                    <div class="slideshowDot"></div>
+                    <div class="slideshowDot"></div>
+                    <div class="slideshowDot"></div>
+                    <div class="slideshowDot"></div>
+                    <div class="slideshowDot active"></div>
+                    <div class="slideshowDot"></div>
+                </div>
+            </section>
+
+            <!-- Testimonial Section -->
+            <div class="titleHeader2">
+                <h2>★★★★★ I really love this pub - Ben M</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript for Hamburger Menu and Navigation -->
+    <script>
+        // Toggle mobile navigation
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navBar = document.querySelector('.NavBar1');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navBar.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
 
